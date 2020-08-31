@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-28 23:14:41
- * @LastEditTime: 2020-08-30 11:55:03
+ * @LastEditTime: 2020-08-31 15:19:21
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\Login.vue
@@ -71,7 +71,7 @@ export default {
       // validate是elementui中的表单方法
       this.$refs.loginFormRef.validate(async valid => {
         if (!valid) return false
-        // 这里是解构赋值
+        // 这里是解构赋值,结构data属性，重命名为res
         const { data: res } = await this.$http.post('login', this.loginForm)
         if (res.meta.status !== 200) return this.$message.error('登录失败！')
         this.$message.success('登录成功')
