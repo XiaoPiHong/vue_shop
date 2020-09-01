@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-28 16:30:01
- * @LastEditTime: 2020-08-31 14:58:43
+ * @LastEditTime: 2020-09-01 21:21:14
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\plugins\element.js
@@ -33,7 +33,11 @@ import {
   Pagination,
   Dialog,
   // MessageBox1：导入消息弹框提示组件
-  MessageBox
+  MessageBox,
+  Tag,
+  Tree,
+  Select,
+  Option
 } from 'element-ui'
 Vue.use(Button)
 Vue.use(Form)
@@ -61,3 +65,7 @@ Vue.use(Pagination)
 Vue.use(Dialog)
 // MessageBox2：全局挂载MessageBox在Vue上，$confirm是自定义属性可以自己更改名字
 Vue.prototype.$confirm = MessageBox.confirm
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Select)
+Vue.use(Option)
