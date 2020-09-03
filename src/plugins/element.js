@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-28 16:30:01
- * @LastEditTime: 2020-09-01 21:21:14
+ * @LastEditTime: 2020-09-02 11:39:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\plugins\element.js
@@ -37,7 +37,8 @@ import {
   Tag,
   Tree,
   Select,
-  Option
+  Option,
+  Cascader
 } from 'element-ui'
 Vue.use(Button)
 Vue.use(Form)
@@ -69,3 +70,4 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)

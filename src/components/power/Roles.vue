@@ -277,7 +277,7 @@ export default {
       if (res.meta.status !== 200) return this.$message.error('获取权限数据失败')
       // 把获取到的权限数据保存到data中
       this.rightsList = res.data
-      console.log(this.rightsList)
+      // console.log(this.rightsList)
 
       //   =======递归获取三级节点的id=========
       this.getLeafKeys(role, this.defKeys)
