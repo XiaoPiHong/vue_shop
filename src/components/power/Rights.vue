@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-01 08:52:02
- * @LastEditTime: 2020-09-01 10:12:47
+ * @LastEditTime: 2020-09-03 17:37:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\power\Rights.vue
@@ -10,7 +10,7 @@
   <div>
     <!-- 面包屑导航区域 -->
     <el-breadcrumb separator-class="el-icon-arrow-right">
-      <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+      <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>权限管理</el-breadcrumb-item>
       <el-breadcrumb-item>权限列表</el-breadcrumb-item>
     </el-breadcrumb>
