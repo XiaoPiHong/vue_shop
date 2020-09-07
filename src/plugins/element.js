@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-28 16:30:01
- * @LastEditTime: 2020-09-05 11:19:38
+ * @LastEditTime: 2020-09-07 20:43:46
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\plugins\element.js
@@ -46,7 +46,9 @@ import {
   Step,
   CheckboxGroup,
   Checkbox,
-  Upload
+  Upload,
+  Timeline,
+  TimelineItem
 } from 'element-ui'
 Vue.use(Button)
 Vue.use(Form)
@@ -87,3 +89,5 @@ Vue.use(Step)
 Vue.use(CheckboxGroup)
 Vue.use(Checkbox)
 Vue.use(Upload)
+Vue.use(Timeline)
+Vue.use(TimelineItem)

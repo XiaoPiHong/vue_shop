@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-31 16:14:29
- * @LastEditTime: 2020-09-04 23:21:39
+ * @LastEditTime: 2020-09-07 17:44:56
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\router\index.js
@@ -18,6 +18,7 @@ import Cate from '../components/goods/Cate.vue'
 import Params from '../components/goods/Params'
 import List from '../components/goods/List.vue'
 import Add from '../components/goods/Add.vue'
+import Order from '../components/order/Order.vue'
 
 Vue.use(VueRouter)
 
@@ -55,6 +56,9 @@ const routes = [{
   }, {
     path: '/goods/add',
     component: Add
+  }, {
+    path: '/orders',
+    component: Order
   }]
 }]
 
