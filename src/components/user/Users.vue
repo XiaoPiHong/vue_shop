@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-08-30 17:53:57
- * @LastEditTime: 2020-09-03 17:37:48
+ * @LastEditTime: 2020-09-08 23:30:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\components\user\Users.vue
@@ -21,7 +21,7 @@
       <el-row :gutter="20">
         <el-col :span="8">
           <el-input placeholder="请输入内容" v-model="queryInfo.query" clearable @clear="getUserList()">
-            <el-button slot="append" icon="el-icon-search" @click="getUserList()"></el-button>
+            <el-button slot="append" icon="el-icon-search" @click="queryUserList()"></el-button>
           </el-input>
         </el-col>
         <el-col :span="4">
@@ -233,6 +233,11 @@ export default {
     handleCurrentChange (newPage) {
       this.queryInfo.pagenum = newPage
       // console.log(newPage)
+      this.getUserList()
+    },
+    // 查询用户
+    queryUserList () {
+      this.queryInfo.pagenum = 1
       this.getUserList()
     },
     // 监听switch开关状态的改变
