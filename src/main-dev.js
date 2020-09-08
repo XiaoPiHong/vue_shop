@@ -1,10 +1,10 @@
 /*
  * @Author: your name
- * @Date: 2020-08-28 16:25:40
- * @LastEditTime: 2020-09-08 14:08:44
- * @LastEditors: Please set LastEditors
+ * @Date: 2020-09-05 19:07:31
+ * @LastEditTime: 2020-09-08 15:28:47
+ * @LastEditors: your name
  * @Description: In User Settings Edit
- * @FilePath: \vue_shop\src\main.js
+ * @FilePath: \vue_shop\src\main-dev.js
  */
 import Vue from 'vue'
 import App from './App.vue'
