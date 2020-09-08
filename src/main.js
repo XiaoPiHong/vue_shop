@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-28 16:25:40
- * @LastEditTime: 2020-09-05 16:53:45
+ * @LastEditTime: 2020-09-08 14:08:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\main.js
@@ -24,6 +24,11 @@ import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css' // for bubble theme
 
+// 3.1导入nprogress的js
+import NProgress from 'nprogress'
+// 3.2导入nprogress对应的样式
+import 'nprogress/nprogress.css'
+
 import axios from 'axios'
 // 配置请求的根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
@@ -31,9 +36,16 @@ axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
 // 通过axios请求拦截器添加token，保证拥有获取数据的权限
 axios.interceptors.request.use(config => {
   // console.log(config)
+  // 3.3 在request拦截器中，显示进度条，NProgress.start()
+  NProgress.start()
   // 为请求头对象，添加Token 验证的Authorization字段
   config.headers.Authorization = window.sessionStorage.getItem('token')
   // 在最后必须retuen config
+  return config
+})
+// 3.4在response拦截器中，隐藏进度条,NProgress.done()
+axios.interceptors.response.use(config => {
+  NProgress.done()
   return config
 })
 Vue.prototype.$http = axios
