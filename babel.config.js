@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-08-28 16:25:40
- * @LastEditTime: 2020-09-08 14:44:09
+ * @LastEditTime: 2020-09-08 21:26:43
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\babel.config.js
@@ -25,6 +25,8 @@ module.exports = {
       }
     ],
     // 发布产品时候的插件数组
-    ...prodPlugins
+    ...prodPlugins,
+    // 实现路由的懒加载
+    '@babel/plugin-syntax-dynamic-import'
   ]
 }
