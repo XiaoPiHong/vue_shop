@@ -1,15 +1,15 @@
 /*
  * @Author: your name
  * @Date: 2020-09-08 15:28:31
- * @LastEditTime: 2020-09-08 19:45:15
- * @LastEditors: your name
+ * @LastEditTime: 2020-09-08 20:09:32
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue_shop\src\main-prod.js
  */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import './plugins/element.js'
+/* import './plugins/element.js' */
 // 导入字体图标
 import './assets/fonts/iconfont.css'
 // 导入全局样式表
