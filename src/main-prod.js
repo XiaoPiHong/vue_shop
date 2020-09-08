@@ -1,3 +1,11 @@
+/*
+ * @Author: your name
+ * @Date: 2020-09-08 15:28:31
+ * @LastEditTime: 2020-09-08 19:45:15
+ * @LastEditors: your name
+ * @Description: In User Settings Edit
+ * @FilePath: \vue_shop\src\main-prod.js
+ */
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -12,14 +20,14 @@ import TreeTable from 'vue-table-with-tree-grid'
 // 2.1导入富文本编辑器
 import VueQuillEditor from 'vue-quill-editor'
 // 2.2导入富文本编辑器对应的样式
-import 'quill/dist/quill.core.css' // import styles
+/* import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
-import 'quill/dist/quill.bubble.css' // for bubble theme
+import 'quill/dist/quill.bubble.css' // for bubble theme */
 
 // 3.1导入nprogress的js
 import NProgress from 'nprogress'
 // 3.2导入nprogress对应的样式
-import 'nprogress/nprogress.css'
+/* import 'nprogress/nprogress.css' */
 
 import axios from 'axios'
 // 配置请求的根路径
